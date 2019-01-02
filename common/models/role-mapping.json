@@ -1,0 +1,21 @@
+{
+  "name": "roleMapping",
+  "plural": "roleMappings",
+  "base": "RoleMapping",
+  "idInjection": true,
+  "strictObjectIDCoercion": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "role": {
+      "type": "belongsTo",
+      "model": "role",
+      "foreignKey": "roleId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

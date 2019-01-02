@@ -1,0 +1,31 @@
+{
+  "db": {
+    "host": "localhost",
+    "url": "mongodb://127.0.0.1/dev",
+    "database": "dev",
+    "name": "db",
+    "connector": "mongodb",
+    "allowExtendedOperators": true,
+    "enableGeoIndexing": true,
+    "lazyConnect": true
+  },
+  "email": {
+    "name": "email",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "mail.yourdomain.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": true
+        },
+        "auth": {
+          "user": "user@domain",
+          "pass": "password"
+        }
+      }
+    ]
+  }
+}
