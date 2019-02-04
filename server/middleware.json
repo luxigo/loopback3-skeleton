@@ -40,9 +40,14 @@
   },
   "files": {},
   "final": {
-    "loopback#urlNotFound": {}
+    "./middleware/url-not-found": {}
   },
   "final:after": {
-    "strong-error-handler": {}
+    "strong-error-handler": {
+      "params": {
+        "debug": false,
+        "log": true
+      }
+    }
   }
 }
